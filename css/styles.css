@@ -129,6 +129,8 @@ header {
 
 .contacts-info > a {
   color: var(--primary-text-color);
+  display: inline-flex;
+  align-items: center;
 
   font-style: normal;
   font-weight: 500;
@@ -153,7 +155,6 @@ header {
 
 .contacts-info > a:hover,
 .contacts-info > a:focus {
-  fill: var(--accent-color);
   color: var(--accent-color);
 }
 
@@ -318,6 +319,8 @@ header {
 
 .workers .item {
   width: calc((100% - 90px) / 4);
+
+  background-color: var(--white-color);
   text-align: center;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -491,13 +494,13 @@ footer .social-media {
   margin-top: 20px;
 }
 
-footer .social-media img {
+footer .social-link {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
 }
 
-footer .social-media img:hover {
-  background-color: var(--accent-color);
+footer .social-icon {
+  fill: var(--white-color);
 }
 
 .copyright {
@@ -553,8 +556,13 @@ footer .social-media img:hover {
   display: block;
 }
 
+.examples-list .link:hover,
+.examples-list .link:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 .examples-list .item {
-  border: 1px solid #eeeeee;
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -570,6 +578,9 @@ footer .social-media img:hover {
 
 .examples-list .item .box {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .examples-list .title {
   margin-bottom: 4px;
