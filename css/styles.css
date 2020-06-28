@@ -342,9 +342,8 @@ header {
 
 .social-link {
   display: block;
-}
-
-.social-link img {
+  width: 44px;
+  height: 44px;
   padding: 12px;
 }
 
@@ -353,10 +352,21 @@ header {
   justify-content: space-between;
 }
 
-.social-link img:hover,
-.social-link img:focus {
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
   border-radius: 50px;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--white-color);
 }
 
 /* Клиенты */
