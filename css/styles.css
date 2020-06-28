@@ -23,6 +23,7 @@ html {
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --bg-color: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 h1,
@@ -159,7 +160,7 @@ header {
 /* Секция приветствия */
 
 .hero {
-  background-color: #afb1b8;
+  background-color: var(--icon-color);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
@@ -355,7 +356,7 @@ header {
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: var(--icon-color);
 }
 
 .social-link:hover,
@@ -374,19 +375,63 @@ header {
   display: flex;
 }
 
-.clients .item {
+.clients .item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.clients .link {
   display: flex;
   justify-content: center;
   align-items: center;
 
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 
-.clients .item:not(:first-child) {
-  margin-left: 30px;
+.clients-icon {
+  fill: var(--icon-color);
+}
+
+.logo1 {
+  width: 44px;
+  height: 49px;
+}
+
+.logo2 {
+  width: 40px;
+  height: 52px;
+}
+
+.logo3 {
+  width: 41px;
+  height: 43px;
+}
+
+.logo4 {
+  width: 80px;
+  height: 42px;
+}
+
+.logo5 {
+  width: 59px;
+  height: 47px;
+}
+
+.logo6 {
+  width: 88px;
+  height: 45px;
+}
+
+.clients .link:hover .clients-icon,
+.clients .link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+
+.clients .link:hover,
+.clients .link:focus {
+  border: 1px solid var(--accent-color);
 }
 
 /* Футер */
