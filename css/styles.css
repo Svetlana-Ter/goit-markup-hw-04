@@ -249,6 +249,13 @@ header {
   height: 70px;
 }
 
+.icon-box {
+  height: 120px;
+  background-color: var(--bg-color);
+  border-radius: 4px;
+  padding: 25px 100px;
+}
+
 .principles .title {
   margin-top: 30px;
   color: var(--titles-color);
